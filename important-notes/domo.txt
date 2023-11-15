@@ -1,4 +1,4 @@
-<iframe src="https://grantcardone.domo.com/embed/card/private/GZ055" width="600" height="600" marginheight="0" marginwidth="0" frameborder="0"></iframe>
+//Images and Domo anywhere dashboards 
 
 growthcon-img          "https://github.com/karro-grantcardone/assets/assets/150045303/c64acdd9-a9ad-4ab2-a82d-1a0bf3eebe38"
 business-summit-img    "https://github.com/karro-grantcardone/assets/assets/150045303/75bba6e9-50f7-47b6-bd92-852d395a76c6"
@@ -11,9 +11,11 @@ resummit-img           "https://github.com/karro-grantcardone/assets/assets/1500
 dynamic-rel-img        "https://github.com/karro-grantcardone/assets/assets/150045303/b845f259-90fe-43ba-a420-0d30986d6c90"
 master-your-money-img  "https://github.com/karro-grantcardone/assets/assets/150045303/23485237-dc0f-4e77-abd5-d29579a7ae9e"
 
+//dashboards
+overview               "https://grantcardone.domo.com/embed/card/private/zmkXy"
 
-DOMO OVERVIEW EMBED <iframe src="https://grantcardone.domo.com/embed/card/private/zmkXy" width="1080" height="1080" marginheight="0" marginwidth="0" frameborder="0"></iframe>
-
-essentials<iframe src="https://grantcardone.domo.com/embed/card/private/DRv8K" width="600" height="600" marginheight="0" marginwidth="0" frameborder="0"></iframe>
-
-bae <iframe src="https://grantcardone.domo.com/embed/card/private/k51kv" width="600" height="600" marginheight="0" marginwidth="0" frameborder="0"></iframe>
+bae                    "https://grantcardone.domo.com/embed/card/private/k51kv"
+essentials             "https://grantcardone.domo.com/embed/card/private/DRv8K"
+growth con             "https://grantcardone.domo.com/embed/card/private/DRv9k"
+real estate            "https://grantcardone.domo.com/embed/card/private/BgqLo"
+business summit        "https://grantcardone.domo.com/embed/card/private/GZ055"
