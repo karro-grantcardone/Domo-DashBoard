@@ -175,3 +175,84 @@ function result19(data){
   console && console.log(data);
   document.getElementById("virtual-tickets_sold").innerHTML = data['rows'][0][0];
 }
+
+//timer 1
+var countDownDate1 = new Date("Dec 2, 2023 08:00:00").getTime();
+
+// Update the count down every 1 second
+var x1 = setInterval(function() {
+
+  // Get today's date and time
+  var now1 = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance1 = countDownDate1 - now1;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance1 / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance1 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance1 % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance1 % (1000 * 60)) / 1000);
+    
+  document.getElementById("timer_t1").innerHTML = days+' Days Until Event';
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x1);
+    document.getElementById("timer_t1").innerHTML = "Event Live";
+  }
+}, 1000);
+
+//timer 2
+var countDownDate2 = new Date("Dec 16, 2023 08:00:00").getTime();
+
+// Update the count down every 1 second
+var x2 = setInterval(function() {
+
+  // Get today's date and time
+  var now2 = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance2 = countDownDate2 - now2;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days2 = Math.floor(distance2 / (1000 * 60 * 60 * 24));
+  var hours2 = Math.floor((distance2 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes2 = Math.floor((distance2 % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds2 = Math.floor((distance2 % (1000 * 60)) / 1000);
+    
+  document.getElementById("timer_t2").innerHTML = days2+' Days Until Event';
+    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    document.getElementById("timer_t2").innerHTML = "Event Live";
+  }
+}, 1000);
+
+//timer 3
+var countDownDate3 = new Date("Dec 19, 2023 08:00:00").getTime();
+
+// Update the count down every 1 second
+var x3 = setInterval(function() {
+
+  // Get today's date and time
+  var now3 = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance3 = countDownDate3 - now3;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days3 = Math.floor(distance3 / (1000 * 60 * 60 * 24));
+  var hours3 = Math.floor((distance3 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes3 = Math.floor((distance3 % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds3 = Math.floor((distance3 % (1000 * 60)) / 1000);
+    
+  document.getElementById("timer_t3").innerHTML = days3+' Days Until Event';
+    
+  // If the count down is over, write some text 
+  if (distance3 < 0) {
+    clearInterval(x3);
+    document.getElementById("timer_t3").innerHTML = "Event Live";
+  }
+}, 1000);
