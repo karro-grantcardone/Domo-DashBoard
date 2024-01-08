@@ -18,7 +18,7 @@ overview               "https://grantcardone.domo.com/embed/card/private/zmkXy"
 bae                    "https://grantcardone.domo.com/embed/card/private/k51kv"
 essentials             "https://grantcardone.domo.com/embed/card/private/DRv8K"
 growth con             "https://grantcardone.domo.com/embed/card/private/DRv9k"
-real estate            "https://grantcardone.domo.com/embed/card/private/BgqLo"
+real estate            "https://grantcardone.domo.com/embed/card/private/lOrk6"
 business summit        "https://grantcardone.domo.com/embed/card/private/GZ055"
 
 
