@@ -16,8 +16,8 @@ bring your deal        "https://github.com/karro-grantcardone/assets/assets/1500
 overview               "https://grantcardone.domo.com/embed/card/private/zmkXy"
 
 bae                    "https://grantcardone.domo.com/embed/card/private/k51kv"
-essentials             "https://grantcardone.domo.com/embed/card/private/DRv8K"
-growth con             "https://grantcardone.domo.com/embed/card/private/DRv9k"
+essentials             "https://grantcardone.domo.com/embed/card/private/76Q18"
+growth con             "https://grantcardone.domo.com/embed/card/private/8qR12"
 real estate            "https://grantcardone.domo.com/embed/card/private/lOrk6"
 business summit        "https://grantcardone.domo.com/embed/card/private/GZ055"
 
@@ -36,3 +36,5 @@ bae_2                     #C71585
 marketing                 #FFFF00
 sales                     #B22222
 growthcon                 #daa520
+
+<iframe src="https://grantcardone.domo.com/embed/card/private/j2oZY" width="600" height="600" marginheight="0" marginwidth="0" frameborder="0"></iframe>
