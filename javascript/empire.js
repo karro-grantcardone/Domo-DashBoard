@@ -131,3 +131,30 @@ domo.post('/sql/v1/dataset0', query20, {contentType: 'text/plain'}).then(result2
   console && console.log(data);
   document.getElementById("mym-virtual-tickets_sold").innerHTML = data['rows'][0][0];
 }
+//couples retreat
+//purchaser
+var query111 = 'SELECT COUNT(*) FROM dataset0 WHERE ticket_type_id in (642)';
+domo.post('/sql/v1/dataset0', query111, {contentType: 'text/plain'}).then(result111);
+ function result111(data){
+  console && console.log(data);
+  document.getElementById("purchaser-tickets_sold").innerHTML = data['rows'][0][0];
+}
+var query121 = 'SELECT COUNT(*) FROM dataset0 WHERE ticket_type_id in (642)';
+domo.post('/sql/v1/dataset0', query121, {contentType: 'text/plain'}).then(result121);
+ function result121(data){
+  console && console.log(data);
+  document.getElementById("purchaser-tickets_left").innerHTML = 40 - data['rows'][0][0];
+}
+var query131 = 'SELECT COUNT(*) FROM dataset1 WHERE ticket_type_id in (642)';
+domo.post('/sql/v1/dataset1', query131, {contentType: 'text/plain'}).then(result131);
+ function result13a(data){
+  console && console.log(data);
+  document.getElementById("purchaser-tickets_confirmed").innerHTML = data['rows'][0][0];
+}
+
+var query0 = 'SELECT COUNT(*) FROM dataset0 WHERE ticket_type_id in (643)';
+domo.post('/sql/v1/dataset0', query0, {contentType: 'text/plain'}).then(result0);
+ function result0(data){
+  console && console.log(data);
+  document.getElementById("partner2-tickets_sold").innerHTML = data['rows'][0][0];
+}
