@@ -13,7 +13,7 @@ master-your-money-img  "https://github.com/karro-grantcardone/assets/assets/1500
 bring your deal        "https://github.com/karro-grantcardone/assets/assets/150045303/7a36e60f-5b85-4a60-b92d-a363ad5bf26c"
 
 //Dashboards
-overview               "https://grantcardone.domo.com/embed/card/private/zmkXy"
+overview               "https://grantcardone.domo.com/embed/card/private/66PBz"
 
 bae                    "https://grantcardone.domo.com/embed/card/private/k51kv"
 essentials             "https://grantcardone.domo.com/embed/card/private/76Q18"
@@ -36,5 +36,3 @@ bae_2                     #C71585
 marketing                 #FFFF00
 sales                     #B22222
 growthcon                 #daa520
-
-<iframe src="https://grantcardone.domo.com/embed/card/private/j2oZY" width="600" height="600" marginheight="0" marginwidth="0" frameborder="0"></iframe>

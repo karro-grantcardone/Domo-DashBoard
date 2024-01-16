@@ -1,7 +1,3 @@
-// DDX Bricks Wiki - See https://developer.domo.com/docs/ddx-bricks/getting-started-using-ddx-bricks
-// for tips on getting started, linking to Domo data and debugging your app
- 
-//Available globals
 var domo = window.domo; // For more on domo.js: https://developer.domo.com/docs/dev-studio-guides/domo-js#domo.get
 var datasets = window.datasets;
 
@@ -17,7 +13,7 @@ var query2 = 'SELECT COUNT(*) FROM dataset0 WHERE event_id = 521 AND ticket_type
 domo.post('/sql/v1/dataset0', query2, {contentType: 'text/plain'}).then(result2);
  function result2(data){
   console && console.log(data);
-  document.getElementById("dynamic-vip-tickets_left").innerHTML = 30 - data['rows'][0][0];
+  document.getElementById("dynamic-vip-tickets_left").innerHTML = 20 - data['rows'][0][0];
 }
 var query3 = 'SELECT COUNT(*) FROM dataset0 WHERE event_id = 521 AND ticket_type_id in (295)';
 domo.post('/sql/v1/dataset1', query3, {contentType: 'text/plain'}).then(result3);
@@ -38,7 +34,7 @@ domo.post('/sql/v1/dataset0', query5, {contentType: 'text/plain'}).then(result5)
   console && console.log(data);
   document.getElementById("dynamic-exec-tickets_left").innerHTML = 100 - data['rows'][0][0];
 }
-var query6 = 'SELECT COUNT(*) FROM dataset0 WHERE event_id = 521 AND ticket_type_id in (294)';
+var query6 = 'SELECT COUNT(*) FROM dataset1 WHERE ticket_type_id in (294)';
 domo.post('/sql/v1/dataset1', query6, {contentType: 'text/plain'}).then(result6);
  function result6(data){
   console && console.log(data);
@@ -55,7 +51,7 @@ var query8 = 'SELECT COUNT(*) FROM dataset0 WHERE event_id = 521 AND ticket_type
 domo.post('/sql/v1/dataset0', query8, {contentType: 'text/plain'}).then(result8);
  function result8(data){
   console && console.log(data);
-  document.getElementById("dynamic-tot-tickets_left").innerHTML = 130 - data['rows'][0][0];
+  document.getElementById("dynamic-tot-tickets_left").innerHTML = 120 - data['rows'][0][0];
 }
 var query9 = 'SELECT COUNT(*) FROM dataset0 WHERE event_id = 521 AND ticket_type_id in (294,295)';
 domo.post('/sql/v1/dataset1', query9, {contentType: 'text/plain'}).then(result9);
@@ -82,7 +78,7 @@ var query12 = 'SELECT COUNT(*) FROM dataset0 WHERE event_id = 506 AND ticket_typ
 domo.post('/sql/v1/dataset0', query12, {contentType: 'text/plain'}).then(result12);
  function result12(data){
   console && console.log(data);
-  document.getElementById("mym-vip-tickets_left").innerHTML = 30 - data['rows'][0][0];
+  document.getElementById("mym-vip-tickets_left").innerHTML = 20 - data['rows'][0][0];
 }
 var query13 = 'SELECT COUNT(*) FROM dataset0 WHERE event_id = 506 AND ticket_type_id in (272)';
 domo.post('/sql/v1/dataset1', query13, {contentType: 'text/plain'}).then(result13);
@@ -103,8 +99,8 @@ domo.post('/sql/v1/dataset0', query15, {contentType: 'text/plain'}).then(result1
   console && console.log(data);
   document.getElementById("mym-exec-tickets_left").innerHTML = 100 - data['rows'][0][0];
 }
-var query16 = 'SELECT COUNT(*) FROM dataset0 WHERE event_id = 506 AND ticket_type_id in (271)';
-domo.post('/sql/v1/dataset1', query16, {contentType: 'text/plain'}).then(result6);
+var query16 = 'SELECT COUNT(*) FROM dataset1 WHERE event_id = 506 AND ticket_type_id in (271)';
+domo.post('/sql/v1/dataset1', query16, {contentType: 'text/plain'}).then(result16);
  function result16(data){
   console && console.log(data);
   document.getElementById("mym-exec-tickets_confirmed").innerHTML = data['rows'][0][0];
@@ -120,7 +116,7 @@ var query18 = 'SELECT COUNT(*) FROM dataset0 WHERE event_id = 506 AND ticket_typ
 domo.post('/sql/v1/dataset0', query18, {contentType: 'text/plain'}).then(result18);
  function result18(data){
   console && console.log(data);
-  document.getElementById("mym-tot-tickets_left").innerHTML = 130 - data['rows'][0][0];
+  document.getElementById("mym-tot-tickets_left").innerHTML = 120 - data['rows'][0][0];
 }
 var query19 = 'SELECT COUNT(*) FROM dataset0 WHERE event_id = 506 AND ticket_type_id in (271,272)';
 domo.post('/sql/v1/dataset1', query19, {contentType: 'text/plain'}).then(result19);
