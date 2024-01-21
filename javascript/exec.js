@@ -17,21 +17,21 @@ domo.post('/sql/v1/dataset1', query1, {contentType: 'text/plain'}).then(result1)
   document.getElementById("rei-baller-tickets_confirmed").innerHTML = data['rows'][0][0];
 }
 //vip
-var query2 = 'SELECT COUNT(*) FROM dataset0 WHERE ticket_type_id in (847)';
+var query2 = 'SELECT COUNT(*) FROM dataset0 WHERE ticket_type_id in (837)';
 domo.post('/sql/v1/dataset0', query2, {contentType: 'text/plain'}).then(result2);
  function result2(data){
   console && console.log(data);
   document.getElementById("rei-vip-tickets_sold").innerHTML = data['rows'][0][0];
 }
 //executive
-var query3 = 'SELECT COUNT(*) FROM dataset0 WHERE ticket_type_id in (846)';
+var query3 = 'SELECT COUNT(*) FROM dataset0 WHERE ticket_type_id in (831)';
 domo.post('/sql/v1/dataset0', query3, {contentType: 'text/plain'}).then(result3);
  function result3(data){
   console && console.log(data);
   document.getElementById("rei-exec-tickets_sold").innerHTML = data['rows'][0][0];
 }
 //total
-var query4 = 'SELECT COUNT(*) FROM dataset0 WHERE ticket_type_id in (846,847)';
+var query4 = 'SELECT COUNT(*) FROM dataset0 WHERE ticket_type_id in (837,831)';
 domo.post('/sql/v1/dataset0', query4, {contentType: 'text/plain'}).then(result4);
  function result4(data){
   console && console.log(data);
@@ -191,19 +191,19 @@ domo.post('/sql/v1/dataset0', query20, {contentType: 'text/plain'}).then(result2
 //TABLE 4
 //REAL ESTATE SUMMIT DEC 2023
 //ult-vip
-var query21 = 'SELECT COUNT(*) FROM dataset0 WHERE ticket_type_id in (295)';
+var query21 = 'SELECT COUNT(*) FROM dataset0 WHERE ticket_type_id in (642)';
 domo.post('/sql/v1/dataset0', query21, {contentType: 'text/plain'}).then(result21);
  function result21(data){
   console && console.log(data);
   document.getElementById("rs-ult-vip-tickets_sold").innerHTML = data['rows'][0][0];
 }
-var query219 = 'SELECT COUNT(*) FROM dataset0 WHERE ticket_type_id in (295)';
+var query219 = 'SELECT COUNT(*) FROM dataset0 WHERE ticket_type_id in (642)';
 domo.post('/sql/v1/dataset0', query219, {contentType: 'text/plain'}).then(result219);
  function result219(data){
   console && console.log(data);
-  document.getElementById("rs-ult-vip-tickets_left").innerHTML = 20 - data['rows'][0][0];
+  document.getElementById("rs-ult-vip-tickets_left").innerHTML = 40 - data['rows'][0][0];
 }
-var query22 = 'SELECT COUNT(*) FROM dataset1 WHERE ticket_type_id in (295)';
+var query22 = 'SELECT COUNT(*) FROM dataset1 WHERE ticket_type_id in (642)';
 domo.post('/sql/v1/dataset1', query22, {contentType: 'text/plain'}).then(result22);
  function result22(data){
   console && console.log(data);
@@ -242,19 +242,19 @@ domo.post('/sql/v1/dataset1', query26, {contentType: 'text/plain'}).then(result2
   document.getElementById("rs-vip-tickets_confirmed").innerHTML = data['rows'][0][0];
 }
 //executive
-var query27 = 'SELECT COUNT(*) FROM dataset0 WHERE ticket_type_id in (294)';
+var query27 = 'SELECT COUNT(*) FROM dataset0 WHERE ticket_type_id in (643)';
 domo.post('/sql/v1/dataset0', query27, {contentType: 'text/plain'}).then(result27);
  function result27(data){
   console && console.log(data);
   document.getElementById("rs-exec-tickets_sold").innerHTML = data['rows'][0][0];
 }
-var query273 = 'SELECT COUNT(*) FROM dataset0 WHERE ticket_type_id in (294)';
+var query273 = 'SELECT COUNT(*) FROM dataset0 WHERE ticket_type_id in (643)';
 domo.post('/sql/v1/dataset0', query273, {contentType: 'text/plain'}).then(result273);
  function result273(data){
   console && console.log(data);
-  document.getElementById("rs-exec-tickets_left").innerHTML = 100 - data['rows'][0][0];
+  document.getElementById("rs-exec-tickets_left").innerHTML = 40 - data['rows'][0][0];
 }
-var query28 = 'SELECT COUNT(*) FROM dataset1 WHERE ticket_type_id in (294)';
+var query28 = 'SELECT COUNT(*) FROM dataset1 WHERE ticket_type_id in (643)';
 domo.post('/sql/v1/dataset1', query28, {contentType: 'text/plain'}).then(result28);
  function result28(data){
   console && console.log(data);
@@ -301,8 +301,8 @@ domo.post('/sql/v1/dataset0', query321, {contentType: 'text/plain'}).then(result
   console && console.log(data);
   document.getElementById("bs-super-vip-tickets_left").innerHTML =16 - data['rows'][0][0];
 }
-var query33 = 'SELECT COUNT(*) FROM dataset0 WHERE ticket_type_id in (493)';
-domo.post('/sql/v1/dataset0', query33, {contentType: 'text/plain'}).then(result33);
+var query33 = 'SELECT COUNT(*) FROM dataset1 WHERE ticket_type_id in (493)';
+domo.post('/sql/v1/dataset1', query33, {contentType: 'text/plain'}).then(result33);
  function result33(data){
   console && console.log(data);
   document.getElementById("bs-super-vip-tickets_confirmed").innerHTML = data['rows'][0][0];
