@@ -14,10 +14,10 @@ bring your deal        "https://github.com/karro-grantcardone/assets/assets/1500
 couples retreat        "https://github.com/karro-grantcardone/assets/assets/150045303/ffb0be61-d22f-429f-a08a-266d132ffc7f"
 
 //Dashboards
-overview               "https://grantcardone.domo.com/embed/card/private/66PBz"
+overview               "https://grantcardone.domo.com/embed/card/private/lOBM7"
 
 bae                    "https://grantcardone.domo.com/embed/card/private/k51kv"
-essentials             "https://grantcardone.domo.com/embed/card/private/76Q18"
+essentials             "https://grantcardone.domo.com/embed/card/private/qjKMD"
 growth con             "https://grantcardone.domo.com/embed/card/private/8qR12"
 real estate            "https://grantcardone.domo.com/embed/card/private/lOrk6"
 business summit        "https://grantcardone.domo.com/embed/card/private/GZ055"
