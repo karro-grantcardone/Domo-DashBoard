@@ -2,11 +2,16 @@
 
 growthcon-img          "https://github.com/karro-grantcardone/assets/assets/150045303/c64acdd9-a9ad-4ab2-a82d-1a0bf3eebe38"
 business-summit-img    "https://github.com/karro-grantcardone/assets/assets/150045303/75bba6e9-50f7-47b6-bd92-852d395a76c6"
+       white           "https://github.com/karro-grantcardone/assets/assets/150045303/3344d543-f468-4e33-8108-14e9ab899ae9"
+       black           "https://github.com/karro-grantcardone/assets/assets/150045303/6e6da552-1fe9-4849-b7b3-ed826ed550e7"
+
 rei-img                "https://github.com/karro-grantcardone/assets/assets/150045303/a79376ec-7cc6-437a-bcb1-3e988817743f"
 sales-img              "https://github.com/karro-grantcardone/assets/assets/150045303/897d96e6-296e-4fb2-a85d-beed65749054"
 marketing-img          "https://github.com/karro-grantcardone/assets/assets/150045303/8d5eed02-3609-4bcc-8cfd-079f09ef43f7"
 resummit-img           "https://github.com/karro-grantcardone/assets/assets/150045303/5b7ad591-f8bb-48e7-b12b-7cd6b4bbdcf1" 
 resummit-img           "https://github.com/karro-grantcardone/assets/assets/150045303/1e277e33-9d8e-415f-a965-5b5f0937ccb4" better to use
+    white              "https://github.com/karro-grantcardone/assets/assets/150045303/1d7ed624-571a-4fe3-8587-541c09e92717"
+    white              "https://github.com/karro-grantcardone/assets/assets/150045303/636823b4-0847-41ab-b7a9-e24fe2328c29"
 10x-ybi-img            "https://github.com/karro-grantcardone/assets/assets/150045303/b9806df3-c24f-4887-a644-5c6b79f0d1e8"
 dynamic-rel-img        "https://github.com/karro-grantcardone/assets/assets/150045303/b845f259-90fe-43ba-a420-0d30986d6c90"
 master-your-money-img  "https://github.com/karro-grantcardone/assets/assets/150045303/23485237-dc0f-4e77-abd5-d29579a7ae9e"
