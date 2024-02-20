@@ -18,6 +18,7 @@ dynamic-rel-img        "https://github.com/karro-grantcardone/assets/assets/1500
 master-your-money-img  "https://github.com/karro-grantcardone/assets/assets/150045303/23485237-dc0f-4e77-abd5-d29579a7ae9e"
 bring your deal        "https://github.com/karro-grantcardone/assets/assets/150045303/7a36e60f-5b85-4a60-b92d-a363ad5bf26c"
 couples retreat        "https://github.com/karro-grantcardone/assets/assets/150045303/ffb0be61-d22f-429f-a08a-266d132ffc7f"
+1-Day Master           "https://github.com/karro-grantcardone/assets/assets/150045303/90faa0d9-9026-4c30-9377-e577f2f9e71d"
 
 //Dashboards
 overview               "https://grantcardone.domo.com/embed/card/private/lOBM7"
