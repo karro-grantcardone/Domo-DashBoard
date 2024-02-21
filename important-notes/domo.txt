@@ -19,6 +19,7 @@ master-your-money-img  "https://github.com/karro-grantcardone/assets/assets/1500
 bring your deal        "https://github.com/karro-grantcardone/assets/assets/150045303/7a36e60f-5b85-4a60-b92d-a363ad5bf26c"
 couples retreat        "https://github.com/karro-grantcardone/assets/assets/150045303/ffb0be61-d22f-429f-a08a-266d132ffc7f"
 1-Day Master           "https://github.com/karro-grantcardone/assets/assets/150045303/90faa0d9-9026-4c30-9377-e577f2f9e71d"
+1-day_master           "https://github.com/karro-grantcardone/assets/assets/150045303/97599e88-7202-419a-af6a-8f5c45ea35f6" better to use
 
 //Dashboards
 overview               "https://grantcardone.domo.com/embed/card/private/lOBM7"
