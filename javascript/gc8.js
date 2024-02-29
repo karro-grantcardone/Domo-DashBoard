@@ -108,13 +108,13 @@ var query13 = 'SELECT SUM(tickets_sold) FROM dataset0 WHERE ticket_type_id IN (3
 domo.post('/sql/v1/dataset0', query13, {contentType: 'text/plain'}).then(result13);
  function result13(data){
   console && console.log(data);
-  document.getElementById("gc8-exec-tickets_sold").innerHTML = data['rows'][0][0];
+  document.getElementById("gc8-exec-tickets_sold").innerHTML = 1875 //data['rows'][0][0];
 }
 var query14 = 'SELECT SUM(tickets_left) FROM dataset0 WHERE ticket_type_id IN (365)';
 domo.post('/sql/v1/dataset0', query14, {contentType: 'text/plain'}).then(result14);
  function result14(data){
   console && console.log(data);
-  document.getElementById("gc8-exec-tickets_left").innerHTML = data['rows'][0][0];
+  document.getElementById("gc8-exec-tickets_left").innerHTML = 0 //data['rows'][0][0];
 }
 var query15 = 'SELECT SUM(tickets_confirmed) FROM dataset0 WHERE ticket_type_id IN (365)';
 domo.post('/sql/v1/dataset0', query15, {contentType: 'text/plain'}).then(result15);
@@ -144,20 +144,50 @@ domo.post('/sql/v1/dataset0', query17, {contentType: 'text/plain'}).then(result1
   document.getElementById("gc8-total_sold").innerHTML = data['rows'][0][0];
 }
 //gc8 total left
-var query18 = 'SELECT SUM(tickets_sold) FROM dataset0 WHERE ticket_type_id IN (365,366,367,368,369)';
+var query18 = 'SELECT SUM(tickets_left) FROM dataset0 WHERE ticket_type_id IN (365,366,367,368,369)';
 domo.post('/sql/v1/dataset0', query18, {contentType: 'text/plain'}).then(result18);
  function result18(data){
   console && console.log(data);
-  document.getElementById("gc8-total_left").innerHTML =4515 -data['rows'][0][0];
+  document.getElementById("gc8-total_left").innerHTML =data['rows'][0][0];
 }
 //gc8 total confirmed
-var query19 = 'SELECT SUM(tickets_sold) FROM dataset0 WHERE ticket_type_id IN (365,366,367,368,369)';
+var query19 = 'SELECT SUM(tickets_confirmed) FROM dataset0 WHERE ticket_type_id IN (365,366,367,368,369)';
 domo.post('/sql/v1/dataset0', query19, {contentType: 'text/plain'}).then(result19);
  function result19(data){
   console && console.log(data);
   document.getElementById("gc8-total_confirmed").innerHTML = data['rows'][0][0];
 }
-
+//ticket type information
+var query20 = 'SELECT ticket_type_name FROM dataset0 WHERE ticket_type_id IN (369)';
+domo.post('/sql/v1/dataset0', query20, {contentType: 'text/plain'}).then(result20);
+ function result20(data){
+  console && console.log(data);
+  document.getElementById("dia-fr-capacity").innerHTML = data['rows'][0][0];
+}
+var query21 = 'SELECT ticket_type_name FROM dataset0 WHERE ticket_type_id IN (368)';
+domo.post('/sql/v1/dataset0', query21, {contentType: 'text/plain'}).then(result21);
+ function result21(data){
+  console && console.log(data);
+  document.getElementById("dia-capacity").innerHTML = data['rows'][0][0];
+}
+var query22 = 'SELECT ticket_type_name FROM dataset0 WHERE ticket_type_id IN (367)';
+domo.post('/sql/v1/dataset0', query22, {contentType: 'text/plain'}).then(result22);
+ function result22(data){
+  console && console.log(data);
+  document.getElementById("pre-capacity").innerHTML = data['rows'][0][0];
+}
+var query23 = 'SELECT ticket_type_name FROM dataset0 WHERE ticket_type_id IN (366)';
+domo.post('/sql/v1/dataset0', query23, {contentType: 'text/plain'}).then(result23);
+ function result23(data){
+  console && console.log(data);
+  document.getElementById("vip-capacity").innerHTML = data['rows'][0][0];
+}
+var query24 = 'SELECT ticket_type_name FROM dataset0 WHERE ticket_type_id IN (365)';
+domo.post('/sql/v1/dataset0', query24, {contentType: 'text/plain'}).then(result24);
+ function result24(data){
+  console && console.log(data);
+  document.getElementById("exec-capacity").innerHTML = data['rows'][0][0];
+}
 //timer 1
 var countDownDate1 = new Date("Apr 2, 2024 08:00:00").getTime();
 
