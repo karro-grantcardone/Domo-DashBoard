@@ -211,10 +211,57 @@ domo.post('/sql/v1/dataset2', query25, {contentType: 'text/plain'}).then(result2
   console && console.log(data);
   document.getElementById("bs-tickets_confirmed").innerHTML = data['rows'][0][0];
 }
-//Couples Retreat | May 2024
-var query26 = 'SELECT SUM(tickets_sold) FROM dataset0 WHERE ticket_type_id in (642)';
-domo.post('/sql/v1/dataset0', query26, {contentType: 'text/plain'}).then(result26);
- function result(data){
-  console && console.log(data);
-  document.getElementById("purchaser-tickets_sold").innerHTML = data['rows'][0][0];
-}
+
+//timer 1
+var countDownDate1 = new Date("Apr 5, 2024 08:00:00").getTime();
+
+// Update the count down every 1 second
+var x1 = setInterval(function() {
+
+  // Get today's date and time
+  var now1 = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance1 = countDownDate1 - now1;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days = Math.floor(distance1 / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance1 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance1 % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance1 % (1000 * 60)) / 1000);
+    
+  document.getElementById("timer_t1").innerHTML = days+' Days Left';
+    
+  // If the count down is over, write some text 
+  if (distance1 < 0) {
+    clearInterval(x1);
+    document.getElementById("timer_t1").innerHTML = "Event Live";
+  }
+}, 1000);
+
+//timer 2
+var countDownDate2 = new Date("May 17, 2024 08:00:00").getTime();
+
+// Update the count down every 1 second
+var x2 = setInterval(function() {
+
+  // Get today's date and time
+  var now2 = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance2 = countDownDate2 - now2;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days2 = Math.floor(distance2 / (1000 * 60 * 60 * 24));
+  var hours2 = Math.floor((distance2 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes2 = Math.floor((distance2 % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds2 = Math.floor((distance2 % (1000 * 60)) / 1000);
+    
+  document.getElementById("timer_t2").innerHTML = days2+' Days Left';
+    
+  // If the count down is over, write some text 
+  if (distance2 < 0) {
+    clearInterval(x2);
+    document.getElementById("timer_t2").innerHTML = "Event Live";
+  }
+}, 1000);
