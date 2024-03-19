@@ -21,6 +21,7 @@ couples retreat        "https://github.com/karro-grantcardone/assets/assets/1500
 1-Day Master           "https://github.com/karro-grantcardone/assets/assets/150045303/90faa0d9-9026-4c30-9377-e577f2f9e71d"
 1-day_master           "https://github.com/karro-grantcardone/assets/assets/150045303/97599e88-7202-419a-af6a-8f5c45ea35f6" better to use
 HQ Day                 "https://github.com/karro-grantcardone/assets/assets/150045303/e860322e-a78d-46d3-999d-8b11030c8021"
+celebrity cruise       "https://github.com/karro-grantcardone/assets/assets/150045303/b7133167-5d80-4010-8ec5-a10744a00a22"
 
 //Dashboards
 overview               "https://grantcardone.domo.com/embed/card/private/lOBM7"
