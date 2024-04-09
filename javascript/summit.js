@@ -130,13 +130,13 @@ var query20 = 'SELECT COUNT(*) FROM dataset2 WHERE ticket_type_id in (100,200)';
 domo.post('/sql/v1/dataset2', query20, {contentType: 'text/plain'}).then(result20);
  function result20(data){
   console && console.log(data);
-  document.getElementById("bs-exec-tickets_left").innerHTML = 245 - data['rows'][0][0];
+  document.getElementById("bs-exec-tickets_left").innerHTML = 300 - data['rows'][0][0];
 }
 var query21 = 'SELECT COUNT(*) FROM dataset2';
 domo.post('/sql/v1/dataset2', query21, {contentType: 'text/plain'}).then(result21);
  function result21(data){
   console && console.log(data);
-  document.getElementById("bs-tickets_left").innerHTML = 485 - data['rows'][0][0];
+  document.getElementById("bs-tickets_left").innerHTML = 540 - data['rows'][0][0];
 }
 var query22 = 'SELECT COUNT(*) FROM dataset2 where ticket_type_id in (102,202) and confirmed = 1';
 domo.post('/sql/v1/dataset2', query22, {contentType: 'text/plain'}).then(result22);

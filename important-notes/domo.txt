@@ -22,7 +22,9 @@ couples retreat        "https://github.com/karro-grantcardone/assets/assets/1500
 1-day_master           "https://github.com/karro-grantcardone/assets/assets/150045303/97599e88-7202-419a-af6a-8f5c45ea35f6" better to use
 HQ Day                 "https://github.com/karro-grantcardone/assets/assets/150045303/e860322e-a78d-46d3-999d-8b11030c8021"
 celebrity cruise       "https://github.com/karro-grantcardone/assets/assets/150045303/b7133167-5d80-4010-8ec5-a10744a00a22"
-growth con 2025        "https://github.com/karro-grantcardone/assets/assets/150045303/97eb6b11-4c6f-46c0-b354-ce5f5bfb6c6d"
+growth con 2025        "https://github.com/karro-grantcardone/assets/assets/150045303/5f825235-6c07-432e-971b-789e99287950"
+sales_man white        "https://github.com/karro-grantcardone/assets/assets/150045303/e4f0763a-8204-44f2-99ec-08aab9b72716"
+sales_man black        "https://github.com/karro-grantcardone/assets/assets/150045303/70fe2ff0-80a2-4b30-a066-859353c78ccd"
 
 //Dashboards
 overview               "https://grantcardone.domo.com/embed/card/private/lOBM7"

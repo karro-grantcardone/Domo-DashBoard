@@ -51,30 +51,30 @@ domo.post('/sql/v1/dataset0', query8, {contentType: 'text/plain'}).then(result8)
   console && console.log(data);
   document.getElementById("sales-virtual-tickets_sold").innerHTML = data['rows'][0][0];
 }
-//10XYBI
-var query100 = 'SELECT SUM(tickets_sold) FROM dataset0 WHERE ticket_type_id in (493)';
+//Sales Manager Workshop
+var query100 = 'SELECT SUM(tickets_sold) FROM dataset0 WHERE ticket_type_id in (1059)';
 domo.post('/sql/v1/dataset0', query100, {contentType: 'text/plain'}).then(result100);
  function result100(data){
   console && console.log(data);
-  document.getElementById("ybi-baller-tickets_sold").innerHTML = data['rows'][0][0];
+  document.getElementById("table2_item1").innerHTML = data['rows'][0][0];
 }
-var query110 = 'SELECT SUM(tickets_sold) FROM dataset0 WHERE ticket_type_id in (493)';
+var query110 = 'SELECT SUM(tickets_left) FROM dataset0 WHERE ticket_type_id in (1059)';
 domo.post('/sql/v1/dataset0', query110, {contentType: 'text/plain'}).then(result110);
  function result110(data){
   console && console.log(data);
-  document.getElementById("ybi-baller-tickets_left").innerHTML = 24 - data['rows'][0][0];
+  document.getElementById("table2_item2").innerHTML = data['rows'][0][0];
 }
-var query200 = 'SELECT SUM(tickets_sold) FROM dataset0 WHERE ticket_type_id in (493)';
+var query200 = 'SELECT SUM(tickets_confirmed) FROM dataset0 WHERE ticket_type_id in (1059)';
 domo.post('/sql/v1/dataset0', query200, {contentType: 'text/plain'}).then(result200);
  function result200(data){
   console && console.log(data);
-  document.getElementById("ybi-baller-tickets_confirmed").innerHTML = data['rows'][0][0];
+  document.getElementById("table2_item3").innerHTML = data['rows'][0][0];
 }
-var query300 = 'SELECT SUM(tickets_sold) FROM dataset0 WHERE ticket_type_id in (758)';
+var query300 = 'SELECT SUM(tickets_sold) FROM dataset0 WHERE ticket_type_id in (1073)';
 domo.post('/sql/v1/dataset0', query300, {contentType: 'text/plain'}).then(result300);
  function result300(data){
   console && console.log(data);
-  document.getElementById("ybi-vip-tickets_sold").innerHTML = data['rows'][0][0];
+  document.getElementById("table2_item4").innerHTML = data['rows'][0][0];
 }
 var query400 = 'SELECT SUM(tickets_sold) FROM dataset0 WHERE ticket_type_id in (492)';
 domo.post('/sql/v1/dataset0', query400, {contentType: 'text/plain'}).then(result400);
@@ -240,7 +240,7 @@ var x1 = setInterval(function() {
 }, 1000);
 
 //timer 2
-var countDownDate2 = new Date("May 17, 2024 08:00:00").getTime();
+var countDownDate2 = new Date("May 15, 2024 08:00:00").getTime();
 
 // Update the count down every 1 second
 var x2 = setInterval(function() {
@@ -264,4 +264,32 @@ var x2 = setInterval(function() {
     clearInterval(x2);
     document.getElementById("timer_t2").innerHTML = "Event Live";
   }
+}, 1000);
+
+
+//timer 3/SALES MGNT
+var countDownDate3 = new Date("May 16, 2024 08:00:00").getTime();
+
+// Update the count down every 1 second
+var x3 = setInterval(function() {
+
+  // Get today's date and time
+  var now3 = new Date().getTime();
+    
+  // Find the distance between now and the count down date
+  var distance3 = countDownDate3 - now3;
+    
+  // Time calculations for days, hours, minutes and seconds
+  var days3 = Math.floor(distance3 / (1000 * 60 * 60 * 24));
+  var hours3 = Math.floor((distance3 % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes3 = Math.floor((distance3 % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds3 = Math.floor((distance3 % (1000 * 60)) / 1000);
+    
+  document.getElementById("timer_t3").innerHTML = days3+' Days Left';
+    
+  // If the count down is over, write some text 
+  if (distance3 < 0) {
+    clearInterval(x3);
+    document.getElementById("timer_t3").innerHTML = "Event Live";
+      }
 }, 1000);

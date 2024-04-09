@@ -49,8 +49,9 @@ font-size: 35px;
 background-color:#af252b;
 color:#fff;
 border-color:#fff;
+font-size:25px;
 }
-#gc8-total_sold,#gc8-total_left,#gc8-total_confirmed,#timer1{
+#gc8-total_sold,#gc8-total_left,#gc8-total_confirmed,#gc8-total_seat_selection, #timer1{
 background-color:#daa520;
 color:#000;
 border-color:#fff;
