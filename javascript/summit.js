@@ -260,7 +260,7 @@ var x1 = setInterval(function() {
   var minutes = Math.floor((distance1 % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance1 % (1000 * 60)) / 1000);
     
-  document.getElementById("timer1").innerHTML = days+' Days Left';
+  document.getElementById("timer1").innerHTML = hours+' Hours Left';
     
   // If the count down is over, write some text 
   if (distance1 < 0) {
