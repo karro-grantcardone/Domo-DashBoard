@@ -25,6 +25,8 @@ celebrity cruise       "https://github.com/karro-grantcardone/assets/assets/1500
 growth con 2025        "https://github.com/karro-grantcardone/assets/assets/150045303/5f825235-6c07-432e-971b-789e99287950"
 sales_man white        "https://github.com/karro-grantcardone/assets/assets/150045303/e4f0763a-8204-44f2-99ec-08aab9b72716"
 sales_man black        "https://github.com/karro-grantcardone/assets/assets/150045303/70fe2ff0-80a2-4b30-a066-859353c78ccd"
+design your life       "https://github.com/karro-grantcardone/assets/assets/150045303/7c60122a-c8d2-4fa7-a884-015b30525e68"
+ladies club            "https://github.com/karro-grantcardone/assets/assets/150045303/631309d3-ba82-4ff4-8dba-87c7ae92b746"
 
 //Dashboards
 overview               "https://grantcardone.domo.com/embed/card/private/lOBM7"
