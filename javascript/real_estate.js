@@ -20,6 +20,12 @@ function result1c(data){
   console && console.log(data);
   document.getElementById("table1-item3").innerHTML = data['rows'][0][0];
 }
+var query1d = 'SELECT SUM(tickets_sold) FROM dataset0 WHERE ticket_type_id in (1105)';
+domo.post('/sql/v1/dataset0', query1d, {contentType: 'text/plain'}).then(result1d);
+ function result1d(data){
+  console && console.log(data);
+  document.getElementById("table1-item4").innerHTML = data['rows'][0][0];
+}
 
 //REAL ESTATE INTERACTIVE
 //rei-vip
@@ -180,6 +186,31 @@ function result3t(data){
   console && console.log(data);
   document.getElementById("table3-item19").innerHTML = data['rows'][0][0];
 }
+//real estate unselected bundle
+var query5a = 'SELECT SUM(bundle_tickets) FROM dataset2 WHERE bundle_id in (101,104)';
+domo.post('/sql/v1/dataset2', query5a, {contentType: 'text/plain'}).then(result5a);
+ function result5a(data){
+  console && console.log(data);
+  document.getElementById("table4-item1").innerHTML = data['rows'][0][0];
+}
+var query5b = 'SELECT SUM(bundle_tickets) FROM dataset2 WHERE bundle_id in (10,68)';
+domo.post('/sql/v1/dataset2', query5b, {contentType: 'text/plain'}).then(result5b);
+ function result5b(data){
+  console && console.log(data);
+  document.getElementById("table4-item2").innerHTML = data['rows'][0][0];
+}
+var query5c = 'SELECT SUM(bundle_tickets) FROM dataset2 WHERE bundle_id in (8,67,102)';
+domo.post('/sql/v1/dataset2', query5c, {contentType: 'text/plain'}).then(result5c);
+ function result5c(data){
+  console && console.log(data);
+  document.getElementById("table4-item3").innerHTML = data['rows'][0][0];
+}
+var query5d = 'SELECT SUM(bundle_tickets) FROM dataset2 WHERE bundle_id in (8,67,102,101,104,10,68)';
+domo.post('/sql/v1/dataset2', query5d, {contentType: 'text/plain'}).then(result5d);
+ function result5d(data){
+  console && console.log(data);
+  document.getElementById("table4-item4").innerHTML = data['rows'][0][0];
+}
 
 //BYD 
 //timer 1
@@ -203,7 +234,7 @@ var x1 = setInterval(function() {
   document.getElementById("timer_t1").innerHTML = days +' Days Left';
     
   // If the count down is over, write some text 
-  if (distance1 < 0) {
+  if (distance < 0) {
     clearInterval(x1);
     document.getElementById("timer_t1").innerHTML = "Event Live";
   }
@@ -231,7 +262,7 @@ var x2 = setInterval(function() {
   document.getElementById("timer_t2").innerHTML = days2 +' Days Left';
     
   // If the count down is over, write some text 
-  if (distance2 < 0) {
+  if (distance < 0) {
     clearInterval(x);
     document.getElementById("timer_t2").innerHTML = "Event Live";
   }

@@ -3,37 +3,19 @@ var datasets = window.datasets;
 
 //Step 1. Select your dataset(s) from the button in the bottom left corner
 //10x your business interactive 2024
-var query0 = 'SELECT COUNT(*) FROM dataset0 WHERE event_id = 608 AND ticket_type_id in (493)';
-domo.post('/sql/v1/dataset0', query0, {contentType: 'text/plain'}).then(result0);
- function result0(data){
-  console && console.log(data);
-  document.getElementById("ybi-baller-tickets_sold").innerHTML = data['rows'][0][0];
-}
-var query1 = 'SELECT COUNT(*) FROM dataset0 WHERE event_id = 608 AND ticket_type_id in (493)';
-domo.post('/sql/v1/dataset0', query1, {contentType: 'text/plain'}).then(result1);
- function result1(data){
-  console && console.log(data);
-  document.getElementById("ybi-baller-tickets_left").innerHTML = 24 - data['rows'][0][0];
-}
-var query2 = 'SELECT COUNT(*) FROM dataset1 WHERE event_id = 608 AND ticket_type_id in (493)';
-domo.post('/sql/v1/dataset1', query2, {contentType: 'text/plain'}).then(result2);
- function result2(data){
-  console && console.log(data);
-  document.getElementById("ybi-baller-tickets_confirmed").innerHTML = data['rows'][0][0];
-}
-var query3 = 'SELECT COUNT(*) FROM dataset0 WHERE event_id = 608 AND ticket_type_id in (758)';
+var query3 = 'SELECT SUM(tickets_sold) FROM dataset0 WHERE ticket_type_id in (774)';
 domo.post('/sql/v1/dataset0', query3, {contentType: 'text/plain'}).then(result3);
  function result3(data){
   console && console.log(data);
   document.getElementById("ybi-vip-tickets_sold").innerHTML = data['rows'][0][0];
 }
-var query4 = 'SELECT COUNT(*) FROM dataset0 WHERE event_id = 608 AND ticket_type_id in (492)';
+var query4 = 'SELECT SUM(tickets_sold) FROM dataset0 WHERE ticket_type_id in (455)';
 domo.post('/sql/v1/dataset0', query4, {contentType: 'text/plain'}).then(result4);
  function result4(data){
   console && console.log(data);
   document.getElementById("ybi-exec-tickets_sold").innerHTML = data['rows'][0][0];
 }
-var query5 = 'SELECT COUNT(*) FROM dataset0 WHERE event_id = 608 AND ticket_type_id';
+var query5 = 'SELECT SUM(tickets_sold) FROM dataset0 WHERE ticket_type_id in (774,455)';
 domo.post('/sql/v1/dataset0', query5, {contentType: 'text/plain'}).then(result5);
  function result5(data){
   console && console.log(data);
@@ -240,10 +222,33 @@ domo.post('/sql/v1/dataset1', query37, {contentType: 'text/plain'}).then(result3
   console && console.log(data);
   document.getElementById("july-bs-tickets_confirmed").innerHTML = data['rows'][0][0];
 }
-
+var query38 = 'SELECT SUM(bundle_tickets) FROM dataset2 WHERE bundle_id in (112)';
+domo.post('/sql/v1/dataset2', query38, {contentType: 'text/plain'}).then(result38);
+ function result38(data){
+  console && console.log(data);
+  document.getElementById("table1-item1").innerHTML = data['rows'][0][0];
+}
+var query39 = 'SELECT SUM(bundle_tickets) FROM dataset2 WHERE bundle_id in (25)';
+domo.post('/sql/v1/dataset2', query39, {contentType: 'text/plain'}).then(result39);
+ function result39(data){
+  console && console.log(data);
+  document.getElementById("table1-item2").innerHTML = data['rows'][0][0];
+}
+var query40 = 'SELECT SUM(bundle_tickets) FROM dataset2 WHERE bundle_id in (24)';
+domo.post('/sql/v1/dataset2', query40, {contentType: 'text/plain'}).then(result40);
+ function result40(data){
+  console && console.log(data);
+  document.getElementById("table1-item3").innerHTML = data['rows'][0][0];
+}
+var query41 = 'SELECT SUM(bundle_tickets) FROM dataset2 WHERE bundle_id in (24,25,112)';
+domo.post('/sql/v1/dataset2', query41, {contentType: 'text/plain'}).then(result41);
+ function result41(data){
+  console && console.log(data);
+  document.getElementById("table1-item4").innerHTML = data['rows'][0][0];
+}
 
 //timer 1
-var countDownDate1 = new Date("Apr 26, 2024 08:00:00").getTime();
+var countDownDate1 = new Date("June 1, 2024 08:00:00").getTime();
 
 // Update the count down every 1 second
 var x1 = setInterval(function() {
@@ -260,7 +265,7 @@ var x1 = setInterval(function() {
   var minutes = Math.floor((distance1 % (1000 * 60 * 60)) / (1000 * 60));
   var seconds = Math.floor((distance1 % (1000 * 60)) / 1000);
     
-  document.getElementById("timer1").innerHTML = hours+' Hours Left';
+  document.getElementById("timer1").innerHTML = days+' Days Left';
     
   // If the count down is over, write some text 
   if (distance1 < 0) {
