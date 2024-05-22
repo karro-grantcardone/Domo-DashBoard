@@ -9,6 +9,7 @@ business-summit-img    "https://github.com/karro-grantcardone/assets/assets/1500
 rei-img                "https://github.com/karro-grantcardone/assets/assets/150045303/a79376ec-7cc6-437a-bcb1-3e988817743f"
 sales-img              "https://github.com/karro-grantcardone/assets/assets/150045303/897d96e6-296e-4fb2-a85d-beed65749054"
 marketing-img          "https://github.com/karro-grantcardone/assets/assets/150045303/8d5eed02-3609-4bcc-8cfd-079f09ef43f7"
+essentials             "https://github.com/karro-grantcardone/Domo-DashBoard/assets/150045303/27b18c52-06f4-4e20-b649-8ea31cffb822"
 resummit-img           "https://github.com/karro-grantcardone/assets/assets/150045303/5b7ad591-f8bb-48e7-b12b-7cd6b4bbdcf1" 
 resummit-img           "https://github.com/karro-grantcardone/assets/assets/150045303/1e277e33-9d8e-415f-a965-5b5f0937ccb4" better to use
     white              "https://github.com/karro-grantcardone/assets/assets/150045303/1d7ed624-571a-4fe3-8587-541c09e92717"
