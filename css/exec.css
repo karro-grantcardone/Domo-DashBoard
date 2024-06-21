@@ -64,11 +64,13 @@ td{
 #container div {
     background-color: #000;
     text-align: center;
-    font-size: 10px;
+    font-size: 20px;
 }
 .table1 {
   grid-column-start: span 1;
   align-self: center;
+  position: relative;
+  top:50px;
 
 }
 
@@ -79,23 +81,29 @@ td{
 
 .table3 {
   grid-column-start: span 1;
+  position: relative;
+  top:50px;
   align-self: center;
 }
 
 .table4 {
     grid-column-start: span 1;
+    position: relative;
+    top:70px;
   
 }
 
 .table5 {
     grid-column-start: span 2;
   position: relative;
-   top: 50px;
+   top: 90px;
      align-self: flex-end;
 }
 
 .table6 {
     grid-column-start: span 1;
+    position: relative;
+    top:70px;
 
 }
 
