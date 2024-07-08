@@ -33,6 +33,7 @@ ladies club            "https://github.com/karro-grantcardone/assets/assets/1500
 SSI                    "https://github.com/karro-grantcardone/Domo-DashBoard/assets/150045303/a13eb3ca-353f-4dc2-97dd-a0b730dc5a5c"
 10X SSI BLK Logo       "https://github.com/karro-grantcardone/assets/assets/150045303/9f962214-e15d-4312-ae7a-bab8c913cc9f"
 10X SSI WHT Logo       "https://github.com/karro-grantcardone/assets/assets/150045303/ed95b49a-b15a-46d6-8bfb-50e6f8e472e5"
+wealth_con             "https://github.com/karro-grantcardone/assets/assets/150045303/b59ba397-a0d8-48ee-8f93-a716ab250023"
 
 //Dashboards
 overview               "https://grantcardone.domo.com/embed/card/private/lOBM7"
